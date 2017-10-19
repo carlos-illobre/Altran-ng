@@ -1,0 +1,53 @@
+article.profile {
+ 	max-width: 360px;
+ 	margin: auto;
+}
+
+article.profile section ul {
+	padding: 12px;
+	margin: 0;
+}
+
+article.profile .details ul {
+	padding: 0px;
+}
+
+article.profile section h4 {
+	margin: 0;
+	padding: 10px;
+	border-bottom: 1px solid #CCC;
+	border-top: 1px solid #CCC;
+}
+
+article.profile section h4 .badge {
+	float: right;
+}
+
+article.profile .user-details {
+	position: relative;
+}
+
+article.profile .user-details > div {
+	bottom: 0;
+  padding: 30px 15px 4px;
+  position: absolute;
+  width: 100%;
+	background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, #2d2c41 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%, #2d2c41 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, #2d2c41 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a64d4d4d',GradientType=0 ); /* IE6-9 */
+}
+
+article.profile .user-details > div > ul {
+	padding: 0;
+}
+
+article.profile .user-details > h2 {
+	margin: 30px 0 5px;
+	position: relative;
+}
+
+.user-details ul {
+	padding: 0;
+}
+

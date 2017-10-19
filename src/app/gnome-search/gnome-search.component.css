@@ -1,0 +1,10 @@
+.well {
+  font-weight: 700;
+	border: 2px solid #414141;
+	border-radius: 5px;
+	padding: 10px;
+}
+
+.well .media, .form-control {
+  background: transparent;
+}

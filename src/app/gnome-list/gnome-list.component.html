@@ -1,0 +1,4 @@
+<div>
+	<app-gnome-search [searchCriteria]="gnomeSearchCriteria"></app-gnome-search>
+	<app-gnome-list-item *ngFor="let gnome of gnomes | gnomeFilter:gnomeSearchCriteria" [gnome]="gnome"></app-gnome-list-item>
+<div>

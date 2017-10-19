@@ -1,0 +1,48 @@
+<article class="media user-list well well-sm">
+	<section class="pull-left">
+		<a [routerLink]="['/gnomes', gnome.id]">
+			<img class="media-object img-rounded img-responsive profile-photo" src="{{gnome.thumbnail}}">
+		</a>
+	</section>
+	<section>
+		<div>
+			<h2>{{gnome.name}}</h2>
+			<ul class="list-inline">
+				<li>
+					<h5>Age: </h5>{{gnome.age}}
+				</li>
+				<li>
+					<h5>Weight: </h5>{{gnome.weight}}
+				</li>
+				<li>
+					<h5>Height: </h5>{{gnome.height}}
+				</li>
+				<li>
+					<h5>Hair Color: </h5>{{gnome.hair_color}}
+				</li>
+			</ul>
+		</div>
+	</section>
+	<section>
+		<h4>
+			<i class="fa fa-briefcase"></i>Professions<span class="badge">{{gnome.professions.length}}</span>
+		</h4>
+		<ul class="list-inline">
+			<li class="tag" *ngFor="let profession of gnome.professions">
+				<a routerLink="/gnomes" [queryParams]="{profession: profession}">{{profession}}</a>
+			</li>
+		</ul>
+	</section>
+	<section>
+		<h4>
+			<i class="fa fa-users"></i>Friends<span class="badge">{{gnome.friends.length}}</span>
+		</h4>
+		<ul class="list-inline friends-photos">
+			<li *ngFor="let friend of gnome.friends">
+				<a [routerLink]="['/gnomes', friend.id]">
+					<img class="img-responsive" src="{{friend.thumbnail}}" alt="{{friend.name}}">
+				</a>
+			</li>
+		</ul>
+	</section>
+</article>

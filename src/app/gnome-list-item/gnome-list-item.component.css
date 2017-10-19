@@ -1,0 +1,35 @@
+article.user-list .friends-photos img {
+	max-width: 30px;
+	max-height: 30px;
+}
+
+article.user-list section {
+	margin-bottom: 5px;
+}
+
+article.user-list h2 {
+	margin: 0;
+	display: inline;
+}
+
+article.user-list h4, article.user-list ul {
+	display: inline;
+}
+
+article.user-list ul.friends-photos {
+	display: block;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+article.user-list .profile-photo {
+	max-height: 130px;
+}
+
+.well {
+  font-weight: 700;
+	border: 2px solid #414141;
+	border-radius: 5px;
+	padding: 10px;
+}
+
